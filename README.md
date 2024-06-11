@@ -27,22 +27,22 @@ Com base no vídeo de lançamento do iPhone de 2007 (link abaixo), foi elaborada
 ### Diagrama UML Iphone (Mermaid)
 ```mermaid
 classDiagram
-    class ReprodutorMusical {
-        +tocar()
-        +pausar()
-        +selecionarMusica(String musica)
+    class ReprodutorMusical ~Interface~ {
+        +tocar() void
+        +pausar() void
+        +selecionarMusica(String musica) void
     }
 
-    class AparelhoTelefonico {
-        +ligar(String numero)
-        +atender()
-        +iniciarCorreioVoz()
+    class AparelhoTelefonico ~Interface~ {
+        +ligar(String numero) void
+        +atender() void
+        +iniciarCorreioVoz() void
     }
 
-    class NavegadorInternet {
-        +exibirPagina(String url)
-        +adicionarNovaAba()
-        +atualizarPagina()
+    class NavegadorInternet ~Interface~ {
+        +exibirPagina(String url) void
+        +adicionarNovaAba() void
+        +atualizarPagina() void
     }
 
     class iPhone {
